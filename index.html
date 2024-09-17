@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .map {
+                position:absolute;
+                top: 0px;
+                left: 0px;
+                width: 3600px;
+                height: 2545px;
+            }
+
+            .location {
+                position:absolute;
+                width: 600px;
+                height: 180px;
+                background-color: black;
+                color: white;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size:80pt;
+                z-index: 100;
+            }
+        </style>
+        <script>
+
+
+            async function copyTextToClipboard(textToCopy) {
+                try {
+                    await navigator.clipboard.writeText(textToCopy);
+                    console.log('copied to clipboard')
+                } catch (error) {
+                    console.log('failed to copy to clipboard. error=' + error);
+                }
+            }
+
+            function onMouseClick(e) {
+                console.log(e);
+                copyTextToClipboard(`${e.offsetX},${e.offsetY}`);
+            }
+            function onMouseMove(e)
+            {
+                console.log(e);
+                var coord = document.getElementById('coordinatesDisplay');
+                coord.innerText = `(${e.clientX},${e.clientY})`;
+
+                
+            }
+
+            window.addEventListener('mousemove', onMouseMove );
+            window.addEventListener('click', onMouseClick);
+        </script>
+    </head>    
+    <body>
+        <img style="z-index: 1;" class="map" src="./tokyo-train-map.jpg" />
+        <img style="z-index: 2;" class="map" src="./tokyo.svg" />
+        <div id="coordinatesDisplay" class="location">
+
+        </div>
+    </body>
+</html>

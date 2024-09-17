@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Author : Joel Ivory Johnson   -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 3600 2545" xml:space="preserve">
+    <defs>
+        <style>
+            .line-ome {
+                stroke:#F36523;
+                stroke-width: 8px;
+                fill:none;
+            }
+
+            .line-itsukaichi {
+                stroke:#F36523;
+                stroke-width: 8px;
+                fill:none;
+            }
+            .line-chuo {
+                stroke:#F36523;
+                stroke-width: 8px;
+                fill:none;
+            }
+
+            .line-nambu {
+                stroke:#F0DE00;
+                stroke-width: 8px;
+                fill:none;
+            }
+
+            .line-yokohama {
+                stroke:#85C743;
+                stroke-width: 8px;
+                fill:none;
+            }
+
+            .line-musashino {
+                stroke:#F36523;
+                stroke-width: 8px;
+                fill:none;
+            }
+
+
+
+            .water {
+                stroke:#C6EAF8;
+                stroke-width: 8px;
+                fill:#C6EAF8;
+            }
+        </style>
+    </defs>
+    
+    <g>
+        <path class="line-ome" d="M206,296V114L236,89H353L384,119V973" />
+        <path class="line-itsukaichi" d="M206,545V709L236,736H386" />
+        <path class="line-chuo" d="M147,457V946L181,975H1240L1297,1031V1181L1334,1209L1683,1211L1917,974H2155L2240,1060V1381" />
+        <path class="line-musashino" d="M472,1255V498L708,264H2979L3187,470V1302L3097,1385H2437M3189,1303L3364,1466" />
+    </g>
+
+    <g>
+        <path class="line-nambu" d="M380,996V1165L870,1650V1772L902,1800H1144L1173,1830V1920" />
+        <path class="line-nambu" d="M1035,1858H1040L913,1950V2190" />
+        <path class="line-nambu" d="M914,2095H1110V1802" />
+        <path class="line-nambu" d="M1092,2096V2190" />
+        <path class="line-nambu" d="M968,2096L1003,2123V2192" />
+        
+    </g>
+
+
+    <g id="water">
+        <path class="water" d="M682,2290V2065L737,2010L796,2064V2240H1180V2008L1240,2067V2293" />
+        <path class="water" d="M1685,2290L1738,2246H2030 L2486,1787V1872L2390,1975L2537,2120L2803,1860V1742L3067,1475,H3275L3356,1562V1769L3600,2001V2297" />
+    </g>
+
+</svg>
